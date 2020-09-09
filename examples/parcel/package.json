@@ -1,0 +1,15 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build --experimental-scope-hoisting main.js"
+  },
+  "dependencies": {
+    "core": "1.0.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

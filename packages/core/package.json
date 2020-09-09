@@ -1,0 +1,14 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "build": "run-p build:*",
+    "build:cjs": "tsc --module CommonJS --project tsconfig.dist.json --outDir dist/cjs",
+    "build:es": "tsc --module ESNext --project tsconfig.dist.json --outDir dist/es",
+    "prebuild": "rimraf dist"
+  }
+}
